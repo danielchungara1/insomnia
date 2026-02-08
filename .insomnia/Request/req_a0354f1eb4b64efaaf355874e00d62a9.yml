@@ -1,0 +1,47 @@
+_id: req_a0354f1eb4b64efaaf355874e00d62a9
+type: Request
+parentId: wrk_72e3048cea484d7b93479d57d59f89da
+modified: 1770523944978
+created: 1769479199504
+url: "{{ _.url_base_local }}/prendas/create"
+name: CREATE_PRENDA
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "header": {
+        "userid": "cd211854"
+      },
+      "body": {
+        "nombre": "txt",
+        "precioMayor": 1,
+        "recargoUnidad": 1,    
+        "talle": "1,2,3",  
+        "categoryId": 1,
+        "envio": true,
+        "active": true,
+        "codigo": "123",
+        "tagIds": [
+          1,
+          2,
+          3
+        ]
+      }
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1761657799401
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

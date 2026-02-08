@@ -1,0 +1,38 @@
+_id: req_eebfe0ab5aaf49dc8f358aa545728fbc
+type: Request
+parentId: wrk_72e3048cea484d7b93479d57d59f89da
+modified: 1770519630695
+created: 1770163516472
+url: "{{ _.url_base_local }}/prendas"
+name: FIND_ALL
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+        "header": {
+          "userId": "cd211854"
+        },
+        "body": {
+          "filters": {
+            "textSearch": "pechera"
+          }
+        }
+
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1767566432929.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

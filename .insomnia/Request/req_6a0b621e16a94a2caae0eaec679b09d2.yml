@@ -1,0 +1,74 @@
+_id: req_6a0b621e16a94a2caae0eaec679b09d2
+type: Request
+parentId: wrk_72e3048cea484d7b93479d57d59f89da
+modified: 1769568978124
+created: 1769477204225
+url: "{{ _.url_base_local }}/api/v1/prendas/find-prendas"
+name: REQUEST_TEMPLATE
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "request": {
+        "header": {
+          "userId": "cd211854"
+        },
+        "body": {
+          "filters": {
+            "textSearch": "pechera"
+          }
+        }
+      },
+      
+      "response1" : {
+        "header": {
+          "result": "ok",
+          "bodyType": "LIST"
+        }, 
+        "body": {
+          "count": 2,
+          "list": [
+            {"id": "4", "nombre": "Pechera Guardapolvo Nena", "precio": 5000},
+            {"id": "6", "nombre": "Pechera Guardapolvo Nene", "precio": 6500}
+          ]
+        }
+      },
+      
+      "response2" : {
+        "header": {
+          "result": "ok",
+          "bodyType": "EMPTY"
+        }, 
+        "body": {}
+      },
+      
+      
+      "response3" : {
+        "header": {
+          "result": "fail",
+          "bodyType": "ERROR"
+        }, 
+        "body": {
+          "errorMessage": "Couldn't retrieved data from database.",
+          "errorList": []
+        }
+      }
+      
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1755793245682.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

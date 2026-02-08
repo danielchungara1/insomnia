@@ -1,0 +1,54 @@
+_id: req_19be3fe09cfc473d9ffc423f48a6dded
+type: Request
+parentId: wrk_72e3048cea484d7b93479d57d59f89da
+modified: 1769480064153
+created: 1769479784305
+url: http://localhost:80/v1/update-prenda
+name: UPDATE_PRENDA
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "request": {
+        "header": {
+          "userId": "cd211854"
+        },
+        "body": {
+          "id": 1,
+          "nombre": "txt",
+          "precioMayor": 1,
+          "recargoUnidad": 1,
+          "stock": 1,
+          "talle": "1,2,3",
+          "categoriaId": 1,
+          "envio": true,
+          "tagIds": [1,2,3]       
+        }
+      },
+      
+      "response" : {
+        "header": {
+          "result": "ok",
+          "bodyType": "EMPTY"
+        }, 
+        "body": {}
+      }
+      
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1757748096988.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

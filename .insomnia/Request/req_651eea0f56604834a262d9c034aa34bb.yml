@@ -1,0 +1,47 @@
+_id: req_651eea0f56604834a262d9c034aa34bb
+type: Request
+parentId: wrk_72e3048cea484d7b93479d57d59f89da
+modified: 1769480165924
+created: 1769480028579
+url: http://localhost:80/v1/activate-prenda
+name: ACTIVATE_PRENDA
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+      "request": {
+        "header": {
+          "userId": "cd211854"
+        },
+        "body": {
+          "id": 1,
+          "active": false      
+        }
+      },
+      
+      "response" : {
+        "header": {
+          "result": "ok",
+          "bodyType": "EMPTY"
+        }, 
+        "body": {}
+      }
+      
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1755793245782.25
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

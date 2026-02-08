@@ -1,0 +1,23 @@
+_id: req_c3eb832c576045ae92b52af1242e6056
+type: Request
+parentId: wrk_72e3048cea484d7b93479d57d59f89da
+modified: 1770519646328
+created: 1769565364046
+url: http://localhost:8080/keep-alive
+name: KEEP_ALIVE
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - name: User-Agent
+    value: insomnia/2023.5.8
+authentication: {}
+metaSortKey: -1769565364046
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
